@@ -9,11 +9,8 @@ public class NextGreaterElementI {
         int n2=nums2.length;
 
         int[] ans=new int[n1];
-        int j=n2-1;
-
-        int max=0;
         for(int i=n1-1;i>=0;i--){
-            j=n2-1;
+            int j=n2-1;
             Stack<Integer> st=new Stack<>();
             while(j>0){
                 while(!st.isEmpty() && j>0 && nums1[i]!=nums2[j]){
